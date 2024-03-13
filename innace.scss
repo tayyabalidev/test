@@ -1,0 +1,260 @@
+@import "mixin";
+@import "var";
+
+header{
+    background-color: black;
+    color: $white-color;
+    justify-content: space-between;
+    padding: 15px;
+    .header1{
+        margin-left: 20px;
+        i{
+            color: $bg1-color;
+            }
+            a{
+                color: $white-color;
+            }
+    }
+    
+    .header2{
+        float: right;
+        margin-top: -25px;
+        margin-right: 20px;
+        i{
+            color: $bg1-color;
+            }
+            a{
+                color: $white-color;
+            }
+    }
+    
+}
+
+
+
+
+
+/* home */
+#home{
+    background-color: $white-color;
+}
+.navbar-brand{
+    color: $bg-color;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 10px;  
+}
+.navbar-nav a{
+    font-size: 15px;
+    font-weight: 500;
+    &:hover{
+        color: $bg-color;
+    }
+     
+}
+
+.nav-item {
+    padding: 0px 22px;
+}
+.repair{
+    margin-top: 150px;
+     h1{
+        color: $bg-color;
+        font-weight: 700;
+    }
+    .btn0{
+        @include btn0;
+    }
+}
+
+/* box */
+#box{
+   margin-left: 20px;
+
+   .box1{
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+    transform: translateY(-130px);
+    background-color: $white-color;
+    &:hover{
+        background-color: $bg1-color;
+        color: $white-color;
+        transition: 0.7s;
+    }
+    img{
+        height: 100px;
+        color: $white-color;
+    }
+}
+ 
+
+}
+
+
+
+/* about */
+.about{
+    margin-top: 150px;
+     p{
+        font-size: 15px;
+        font-weight:500;
+    }
+    .btn1{
+       @include btn1;
+    }
+    
+}
+
+
+/* professionals */
+#professionals{
+    background-color: #D1E3FF;
+    padding: 150px 0px 100px 0px;
+    .professional{
+        margin-top: 170px;
+        h1{
+            color: $bg-color;
+            font-weight: 600;
+        }
+        .btn0{
+            @include btn0;
+        }
+    }
+    
+}
+
+
+/* services */
+#services{
+.card1{
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    margin-top: 70px;
+    background-color: $white-color; 
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+    img{
+        height: 80px;
+        color: $white-color;
+    }
+    &:hover{
+        background-color: $bg1-color;
+        color: $white-color;
+        transition: 0.2s;
+    }
+}
+    .btn1{
+        @include btn1;
+    }
+}
+
+/* client */
+.client-1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+    i{
+        color: $bg1-color;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+    }
+}
+
+
+
+.icon{
+   text-align: center;
+   margin-top: 20px;
+
+   .carousel-control-next-icon{
+    background-color: $bg-color;
+    color: $white-color;  
+}
+.carousel-control-prev-icon{
+    background-color: $bg-color;
+    color: $white-color;
+}
+    
+}
+a{
+    text-decoration: none;
+}
+
+// message
+
+#contact{
+    .btn2{
+       @include btn2;
+    }
+}
+.map-message{
+    background-color: $white-color;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    left: 10%;
+    max-width: 390px;
+    position: absolute;
+    transform: translatey(-350px);
+    .btn2{
+        @include btn2;
+    }
+    
+
+}
+
+/* footer */
+footer{
+    background-color: #0A0F43;
+    color: $white-color;
+    text-align: center;
+    .info-item{
+        text-align: center;
+       
+        i{
+            background-color: $bg-color;
+            height: 80px;
+            width: 80px;
+            border-radius: 80px;
+           padding-top: 25px;
+           font-size: 30px;
+           &:hover{
+            background-color: $bg1-color;
+            color: $white-color;
+         }
+        }
+        // i::after{
+        //     content: " ";
+        //     height: 2px;
+        //     background-color: $white-color;
+        //     display: block;
+        // }
+        
+        }
+}
+
+.follow-us{
+    text-align: center;
+    margin-top: 50px;
+    i{
+        margin-top: 20px;
+        background-color: $white-color;
+        color: $bg-color;
+        padding: 10px;
+        &:hover{
+            background-color: $bg1-color;
+            color: $white-color;
+        }
+    }
+   
+}

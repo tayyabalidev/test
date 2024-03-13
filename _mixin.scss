@@ -1,0 +1,46 @@
+@mixin btn0{
+    border: none;
+    outline: none;
+   padding: 12px 50px;
+    border-radius: 5px;
+    background: $bg1-color;
+    color: $white-color;
+    font-weight: 500;
+    &:hover{
+        background: transparent;
+        color: $bg1-color;
+        outline: 1px solid $bg1-color;
+    }
+}
+@mixin btn1{
+    border: none;
+    outline: none;
+    padding: 12px 50px;
+    border-radius: 2px;
+    background: $bg-color;
+    color: $white-color;
+    font-weight: 500;
+    font-size: 17px;
+    &:hover{
+        background: transparent;
+        color: $bg-color;
+        outline: 1px solid $bg-color;
+        transition: 0.4s;
+    }
+}
+@mixin btn2{
+    border: none;
+    outline: none;
+    padding: 8px 50px;
+    border-radius: 2px;
+    background: $bg-color;
+    color: $white-color;
+    font-weight: 500;
+    font-size: 17px;
+    &:hover{
+        background: transparent;
+        color: $bg-color;
+        outline: 1px solid $bg-color;
+        transition: 0.4s;
+    }
+}
